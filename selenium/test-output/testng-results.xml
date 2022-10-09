@@ -1,23 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[abcd]]>
+      <![CDATA[hii]]>
+    </line>
+    <line>
+      <![CDATA[test method name:testA]]>
+    </line>
+    <line>
+      <![CDATA[status:1]]>
+    </line>
+    <line>
+      <![CDATA[test method name:testB]]>
+    </line>
+    <line>
+      <![CDATA[status:2]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-05T12:37:46 IST" name="Default suite" finished-at="2022-10-05T12:37:46 IST" duration-ms="51">
+  <suite started-at="2022-10-08T11:43:46 IST" name="Default suite" finished-at="2022-10-08T11:43:46 IST" duration-ms="52">
     <groups>
     </groups>
-    <test started-at="2022-10-05T12:37:46 IST" name="Default test" finished-at="2022-10-05T12:37:46 IST" duration-ms="51">
-      <class name="frm.prg81">
-        <test-method signature="testa()[pri:0, instance:frm.prg81@2892dae4]" started-at="2022-10-05T12:37:46 IST" name="testa" finished-at="2022-10-05T12:37:46 IST" duration-ms="13" status="PASS">
+    <test started-at="2022-10-08T11:43:46 IST" name="Default test" finished-at="2022-10-08T11:43:46 IST" duration-ms="52">
+      <class name="frm.prg95">
+        <test-method signature="testA()[pri:0, instance:frm.prg95@6a370f4]" started-at="2022-10-08T11:43:46 IST" name="testA" finished-at="2022-10-08T11:43:46 IST" duration-ms="11" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[abcd]]>
+              <![CDATA[hii]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testa -->
-      </class> <!-- frm.prg81 -->
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:frm.prg95@6a370f4]" started-at="2022-10-08T11:43:46 IST" name="postcondition" finished-at="2022-10-08T11:43:46 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=prg95.testA()[pri:0, instance:frm.prg95@6a370f4] output=hii]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test method name:testA]]>
+            </line>
+            <line>
+              <![CDATA[status:1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+        <test-method signature="testB()[pri:0, instance:frm.prg95@6a370f4]" started-at="2022-10-08T11:43:46 IST" name="testB" finished-at="2022-10-08T11:43:46 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at frm.prg95.testB(prg95.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:frm.prg95@6a370f4]" started-at="2022-10-08T11:43:46 IST" name="postcondition" finished-at="2022-10-08T11:43:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=FAILURE method=prg95.testB()[pri:0, instance:frm.prg95@6a370f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test method name:testB]]>
+            </line>
+            <line>
+              <![CDATA[status:2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- frm.prg95 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
